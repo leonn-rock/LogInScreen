@@ -1,0 +1,289 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color:  white;
+}
+
+#pagina {
+  height: auto;
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgb(255,169,67);
+  background: linear-gradient(90deg, rgba(255,169,67,1) 0%, rgba(9,9,121,1) 50%, rgba(52,221,255,1) 100%);
+}
+.linksNav{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-family: 'Richu Regular';
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.linksNav:hover{
+  box-shadow: 0px 0px 15px white;
+  border: orange 2px ridge;
+}
+.linksNav:active{
+  color: orange;
+}
+
+main{
+  background-image: url(images/wumpa-island.jpg);
+  background-size: cover;
+}
+audio{
+  margin-top: 5px;
+  opacity: 0.6;
+}
+audio:hover{
+  opacity: 1;
+}
+.meio{
+  min-height: 690px;
+  height: auto;
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+
+@font-face {
+  font-family: Showing;
+  src: url(font/Showing.otf);
+}
+
+@font-face {
+  font-family: 'Richu Regular';
+  src: url(font/Richu\ Mast\ Regular.ttf);
+}
+
+h1 {
+  font-family: 'Richu Regular';
+  font-size: 36pt;
+}
+h3 {
+  font-family: 'Richu Regular';
+  font-size: 18pt;
+}
+h5 {
+  font-family: Showing;
+  font-size: 12pt;
+  margin: -10px 0px 20px 10px;
+}
+p {
+  font-family: Showing;
+  font-size: 16pt;
+  text-indent: 40px;
+}
+
+.mask {
+  width: 95px;
+  height: 125px;
+  background-size: cover;
+  animation: dance 2s infinite linear;
+}
+@keyframes dance {
+  0% {
+    transform: translateY(0px);
+  }
+  16% {
+    transform: translateY(5px);
+  }
+  33% {
+    transform: translateY(5px) translateX(5px);
+  }
+  50% {
+    transform: translateY(0px) translateX(5px);
+  }
+  66% {
+    transform: translateY(5px) translateX(5px);
+  }
+  83% {
+    transform: translateY(5px) translateX(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#aku {
+  background-image: url(images/aku.png);
+  float: left;
+}
+#uka {
+  background-image: url(images/uka.png);
+  float: right;
+}
+
+.animacao {
+  margin-top: 90px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  animation: infinite 8s walking linear;
+}
+#crash {
+  background-image: url(images/crash-walk-transparent.gif);
+}
+#cortex {
+  background-image: url(images/cortex-run.gif);
+  animation-delay: 1s;
+  transform: scale(50%);
+  position: absolute;
+  left: -10%;
+}
+@keyframes walking {
+  0% {
+    position: absolute;
+    left: -10%;
+    bottom: 0px;
+  }
+
+  100% {
+    position: absolute;
+    left: 110%;
+    bottom: 0px;
+  }
+}
+p+p{
+  margin-top: 20px;
+}
+.banner{
+  background-image: url(images/cortex-weapon.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 1400px;
+  top: 50%;
+}
+.banner p{
+  margin: 180px 15px 0px 0px;
+  font-size: small;
+}
+
+form{
+  border: 3px white solid;
+  border-radius: 10px;
+  width: 40%;
+  min-width: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  background: rgba(255,169,67,0.5);
+  background: linear-gradient(90deg, rgba(255,169,67,0.5) 0%, rgba(9,9,121,0.5) 50%, rgba(52,221,255,0.5) 100%);
+
+}
+fieldset{
+  border: none;
+}
+form p{
+  margin: 20px;
+}
+.caixa{
+  color: black;
+  text-align: left;
+  width: 50%;
+  float: right;
+  margin: 5px 0px;
+  border-radius: 3px;
+}
+.caixa:hover{
+  border: 2px orange ridge;
+  transition: 500ms;
+  box-shadow: 0px 0px 15px orange;
+}
+label{
+  font-family: Showing;
+  font-size: larger;
+}
+#fim{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registro{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.registro p{
+  font-size: larger;
+  margin: 10px auto 20px auto;
+  text-align: center;
+  text-indent: 0px;
+}
+.registro a{
+  margin: 0px auto;
+}
+.espacoBotao{
+  display: flex;
+  width:100%;
+  height: auto;
+  flex-direction: column;
+}
+.botao{
+  margin: 10px 0px 0px auto;
+  width: 150px;
+  height: auto ;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 10px;
+  font-size: medium;
+  font-family: 'Richu Regular';
+  text-decoration: none;
+}
+.botao:active{
+  color: orange;
+}
+.botao:hover{
+  border: 2px orange ridge;
+  box-shadow: 0px 0px 15px white;
+}
+.explode:hover #bomba{
+  background-image: url(images/explode-transparent.gif);  
+  transform: scale(300%);
+}
+
+#recup{
+  margin-top: 30px;
+   width: 200px;
+}
+.imgP{
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  margin: 0px auto;
+}
+#bomba{
+  background-image: url(images/bomb2.png);
+}
+#wumpa{
+  background-image: url(images/wumpa.png);
+  height: 30px;
+   width: 30px;
+ }
+ footer{
+   height: 100px;
+   line-height: 100px;
+   width: 100%;
+   background: rgb(255,169,67);
+    background: linear-gradient(90deg, rgba(255,169,67,1) 0%, rgba(9,9,121,1) 50%, rgba(52,221,255,1) 100%);
+   color: white;
+ }
+ footer p{
+   height: 30px;
+ }

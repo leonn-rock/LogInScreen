@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crash vício - Página Principal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/crash.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="pagina">
+      <nav>
+        <a href="registro.html" class="linksNav">Registrar idBandicoot</a>
+        <a href="esqueci.html" class="linksNav">Esqueci o Código</a>
+      </nav>
+      <main>
+        <audio autoplay controls>
+          <source src="audio/crash.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="meio">
+          <div id="fora">
+            <div id="aku" class="mask"></div>
+            <div id="uka" class="mask"></div>
+          </div>
+          <form action="#" method="get">
+            <h1>Tela de entrada:</h1>
+            <h3>
+              (Insira sua idBandicoot e seu código de acesso dado pelo Dr.
+              Cortex)
+            </h3>
+            <fieldset>
+              <label for="identificacao">idBandicoot:</label>
+              <input class="caixa" type="text" name="identificacao" />
+            </fieldset>
+            <fieldset>
+              <label for="senha">Código de acesso:</label>
+              <input class="caixa" type="password" id="senha" name="lname" />
+            </fieldset>
+            <fieldset>
+              <div id="fim">
+                <div class="registro">
+                  <p>Ainda não tem um idBandicoot?</p>
+                  <a href="registro.html" class="botao"
+                    ><div class="imgP" id="wumpa"></div>
+                    Registrar</a
+                  >
+                </div>
+                <div class="espacoBotao">
+                  <input class="botao" type="submit" value="Entrar" />
+                  <a class="botao explode" href="esqueci.html"
+                    ><div class="imgP" id="bomba"></div>
+                    Esqueci o Código</a
+                  >
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Este é um site feito por fãs e para fãs. Os direitos da franquia são
+          da Activision até o momento.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
